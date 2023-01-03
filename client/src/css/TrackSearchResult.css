@@ -1,0 +1,39 @@
+.track-image{
+    width: 10vw;
+}
+
+.trackmainDiv{
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    border-width: 0.5px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 20px;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: white;
+    color: black;
+
+}
+
+.trackmainDiv:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transform: scale(1.2);
+}
+
+
+.trackTitle{
+    margin-left: 20px;
+    border-style: solid;
+    padding: 5px;
+    border-width: 1px;
+    border-radius: 10px;
+}
+
+.trackArtist{
+    margin-left: 20px;
+}

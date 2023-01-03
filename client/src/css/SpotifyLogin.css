@@ -1,0 +1,19 @@
+.spotify-login-btn{
+    border-style: solid;
+    width: 30vw;
+    min-width: 200px;
+    padding: 10px;
+    border-radius: 15px;
+    border-width: 0px;
+    background-color: rgb(13, 226, 84);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight:600;
+}
+
+.spotifyLoginMainDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: green;
+}

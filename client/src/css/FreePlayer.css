@@ -1,0 +1,18 @@
+.freePlayerMain{
+    border-style: solid;
+    position: sticky;
+    height: 300px;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+}
+
+.freeiFrame{
+    /* width: 30vw; */
+    /* height: 30vw; */
+    width: 150%;
+    height: 200;
+    position: sticky;
+    bottom: 0;
+}
