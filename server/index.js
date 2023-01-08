@@ -14,7 +14,8 @@ app.post('/spotifyLogin',async(req,res)=>{
     const code=req.body.code;
     //credentials setup from spotify-web-api-node NPM docs
     const spotifyApi=new spotifyWebApi({
-        redirectUri:'http://localhost:3000',
+        // redirectUri:'http://localhost:3000',
+        redirectUri:'https://spotify-listen-1450.netlify.app/',
         clientId:'78d07a7eeacf40f88a43d72a7036b3ff',
         clientSecret:'e6a02c47e74c49d18940fb6bbe3f4738'
     })
@@ -35,7 +36,8 @@ app.post('/refresh',async(req,res)=>{
     const refreshToken=req.body.refreshToken
     //credentials setup from spotify-web-api-node NPM docs
     const spotifyApi=new spotifyWebApi({
-        redirectUri:'http://localhost:3000',
+        // redirectUri:'http://localhost:3000',
+        redirectUri:'https://spotify-listen-1450.netlify.app/',
         clientId:'78d07a7eeacf40f88a43d72a7036b3ff',
         clientSecret:'e6a02c47e74c49d18940fb6bbe3f4738',
         refreshToken
@@ -55,6 +57,6 @@ app.post('/refresh',async(req,res)=>{
 })
 
 
-app.listen(3001||process.env.PORT,()=>{
+app.listen(process.env.PORT||3001,()=>{
     console.log('Server is running on port 3001...');
 })

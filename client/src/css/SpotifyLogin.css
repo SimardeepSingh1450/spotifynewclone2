@@ -5,15 +5,38 @@
     padding: 10px;
     border-radius: 15px;
     border-width: 0px;
-    background-color: rgb(13, 226, 84);
+    background-color: rgba(26,178,107,255);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight:600;
+    color: white;
+    transition: all 0.5s ease-in-out;
+    margin: 30px;
+}
+
+.spotify-login-btn:hover{
+    transform: scale(1.1);
+    border-radius: 20px;
 }
 
 .spotifyLoginMainDiv{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-style: solid;
-    border-color: green;
+    text-align: center;
+    /* border-style: solid; */
+    /* border-color: green; */
+    height: 100vh;
+}
+
+.spotifyLoginPhoto{
+    width: 60vw;
+}
+
+.spotifyLoginMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
 }

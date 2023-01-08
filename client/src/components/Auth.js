@@ -8,7 +8,7 @@ const Auth = (code) => {
     const [expiresIn,setExpiresIn]=useState();
 
     useEffect(()=>{
-        axios.post('http://localhost:3001/spotifyLogin',{code}).then((res)=>{
+        axios.post('https://spotifyclone2server.onrender.com/spotifyLogin',{code}).then((res)=>{
             setAccessToken(res.data.accessToken);
             setRefreshToken(res.data.refreshToken);
             setExpiresIn(res.data.expiresIn);
@@ -25,7 +25,7 @@ const Auth = (code) => {
         if(!refreshToken || !expiresIn) return
 
         const interval=setInterval(()=>{
-            axios.post('http://localhost:3001/refresh',{refreshToken}).then((res)=>{
+            axios.post('https://spotifyclone2server.onrender.com/refresh',{refreshToken}).then((res)=>{
             setAccessToken(res.data.accessToken);
             setExpiresIn(res.data.expiresIn);
         }).catch((err)=>{//since the code expires after sometime of login , hence login once again to attain new one

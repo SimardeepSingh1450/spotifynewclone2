@@ -1,6 +1,9 @@
 .songsDiv{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
 }
 
 .dashboardBottom{
@@ -17,7 +20,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: linear-gradient(to bottom , rgb(5, 185, 5),black,black,black);
+    /* background-image: linear-gradient(to bottom , rgb(5, 185, 5),black,black,black); */
+    background-image: linear-gradient(to bottom,grey,black);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .listenFullSong{
@@ -31,6 +38,8 @@
     color: white;
     transition: all 0.5s ease-in-out;
     border-width: 0px;
+    position: sticky;
+    top: 0;
 }
 
 .listenFullSong:hover{
@@ -49,7 +58,28 @@
     width: 500px;
     height: 50px;
     border-radius: 10px;
-    border-width: 5px;
+    border-width: 0px;
     margin: 20px;
-    border-color: black;
+    /* border-color: black; */
+}
+
+.searchDiv{
+    /* border-style: solid; */
+    background-color: white;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    /* margin-top: 150px; */
+}
+
+.searchDiv input:focus{
+    outline: none;
+}
+
+.searchIcon{
+    font-size: 1.5vw;
+    margin-left: 20px;
+    color: grey;
 }

@@ -11,6 +11,7 @@ import Player from './Player';
 import FreePlayer from './FreePlayer';
 //importing react-icons
 import {BsSpotify} from 'react-icons/bs'
+import {AiOutlineSearch} from 'react-icons/ai'
 //CONSOLE LOG LINE 38 & 26 FOR REVIEWING RECIEVED ARRAY DATA
 
 const spotifyApi=new SpotifyWebApi({
@@ -66,7 +67,9 @@ const Dashboard = ({code}) => {
   return (
     <div className='dashboardMain'>
        <button className='listenFullSong' onClick={()=>{getIframe()}}>Listen Current Full Song <BsSpotify className='spotifyLogo'/></button>
-        <input className='songInput' onChange={(e)=>{setSearchSong(e.target.value)}} placeholder='Search Song..'/>
+      <div className='searchDiv'>
+      <AiOutlineSearch className='searchIcon'/> <input className='songInput' onChange={(e)=>{setSearchSong(e.target.value)}} placeholder='Search Song..'/>
+        </div> 
         {/* <h3>Code : {code}</h3> */}
     <div className='songsDiv'>
     {/* <h2>Songs :</h2> */}
